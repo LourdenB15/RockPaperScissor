@@ -10,11 +10,10 @@ while (playerScore !== 5 && computerScore !== 5) {
     while (usernum.toLowerCase() !== 'rock' && usernum.toLowerCase() !== 'paper' && usernum.toLowerCase() !== 'scissor') {
         usernum = prompt('Invalid choice! Please enter: (Rock-Paper-Scissor)')
     }
-    let compnum = getComputerChoice();
     let firstChar = usernum.substring(0, 1);
     let theR = usernum.substring(1, usernum.length).toLowerCase();
     let playerSelection = firstChar.toUpperCase() + theR
-    let computerSelection = comp2str(compnum)
+    let computerSelection = getComputerChoice();
     console.log(`You chose ${playerSelection} and the computer chose ${computerSelection}`);
     gameRound(playerSelection, computerSelection)
     console.log(`player: ${playerScore} || computer: ${computerScore}`)
@@ -48,18 +47,14 @@ function gameRound(a, b) {
         playerScore += 1
     }
 }
-function comp2str(a) {
-    let i;
-    if (a === 1) {
+function getComputerChoice() {
+    let i = Math.floor(Math.random() * 3) + 1;
+    if (i === 1) {
         i = 'Rock'
-    } else if (a === 2) {
+    } else if (i === 2) {
         i = 'Paper'
-    } else if (a === 3) {
+    } else if (i === 3) {
         i = 'Scissor'
     }
     return i
-}
-function getComputerChoice() {
-    let compChoice = Math.floor(Math.random() * 3) + 1;
-    return compChoice
 }
