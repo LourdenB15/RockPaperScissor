@@ -41,7 +41,7 @@ function playRound(a, b) {
 
     computerSelection = getComputerChoice();
     if (a === b) {
-        result.textContent = `It's a draw. The computer chose ${b} as well.`;
+        result.textContent = `It's a draw. The computer chose ${b.charAt(0).toUpperCase() + b.slice(1)} as well.`;
 
     } else if (a === 'rock' && b === 'paper') {
         result.textContent = "You Lose! Paper beats Rock";
