@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #36393B;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5fbef;
+    transition: all .4s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    word-spacing: 10px;
+    font-size: 35px;
+
+}
+
+.scores-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 200px;
+    gap: 1rem;
+}
+
+.scores-wrapper h2 {
+    letter-spacing: 1px;
+    font-weight: 500;
+    height: 150px
+}
+
+.center-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 170px;
+}
+
+.center-text h2 {}
+
+#result {
+    font-size: 20px;
+
+}
+
+.score {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #36393B;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.player h5,
+.opponent h5 {
+    font-size: 1em;
+}
+
+h3 {
+    margin: 40px 0 20px;
+}
+
+.weapon-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+}
+
+.weapon {
+    border: 2px solid #36393B;
+    padding: 10px 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .4s ease;
+
+}
+
+.weapon:hover {
+    background-color: #36393B;
+    color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.weapon:active {
+    border-color: black;
+    background-color: black;
+    transition: none;
+}
+
+.reset {
+    width: 400px;
+    border: 2px solid #36393B;
+    padding: 15px 0;
+    margin: 50px 0;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 2em;
+    font-weight: 500;
+    background-color: #36393B;
+    color: white;
+    transition: all .4s ease;
+}
+
+
+
+.reset:hover {
+    background-color: #f5fbef;
+    color: #36393B;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.reset:active {
+    background-color: rgb(230, 230, 230);
+    transition: none;
+}
+
+@media (max-width:1080px) {
+    .scores-wrapper {
+        padding: 0 150px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #result {
+        font-size: 18px;
+
+    }
+}
+
+@media (max-width: 933px) {
+    #result {
+        font-size: 16px;
+
+    }
+}
+
+@media (max-width: 860px) {
+    .scores-wrapper {
+        padding: 0 100px;
+
+    }
+}
+
+@media (max-width: 730px) {
+    .center-text h2 {
+        font-size: 20px;
+
+    }
+}
