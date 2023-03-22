@@ -21,6 +21,7 @@ body {
     transition: all .4s ease;
 }
 
+/* --/// Title ///-- */
 h1 {
     text-align: center;
     margin-bottom: 50px;
@@ -29,6 +30,8 @@ h1 {
 
 }
 
+/* ////////////////// */
+/* --/// Center ///-- */
 .scores-wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,8 +55,6 @@ h1 {
     height: 170px;
 }
 
-.center-text h2 {}
-
 #result {
     font-size: 20px;
 
@@ -76,6 +77,8 @@ h1 {
     font-size: 1em;
 }
 
+/* ////////////////// */
+/* --/// Buttons ///-- */
 h3 {
     margin: 40px 0 20px;
 }
@@ -88,13 +91,13 @@ h3 {
 }
 
 .weapon {
+    color: #36393B;
     border: 2px solid #36393B;
     padding: 10px 20px;
     margin: 0 20px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700;
     transition: all .4s ease;
-
 }
 
 .weapon:hover {
@@ -108,6 +111,19 @@ h3 {
     background-color: black;
     transition: none;
 }
+
+
+.weapon:disabled {
+    background-color: #f5fbef;
+
+
+    color: inherit;
+    box-shadow: none;
+    color: #36393b75;
+    border-color: #36393b75;
+
+}
+
 
 .reset {
     width: 400px;
@@ -123,8 +139,6 @@ h3 {
     transition: all .4s ease;
 }
 
-
-
 .reset:hover {
     background-color: #f5fbef;
     color: #36393B;
@@ -136,6 +150,9 @@ h3 {
     transition: none;
 }
 
+
+/* ////////////////// */
+/* --/// Responsive ///-- */
 @media (max-width:1080px) {
     .scores-wrapper {
         padding: 0 150px;
@@ -169,3 +186,5 @@ h3 {
 
     }
 }
+
+/* ////////////////// */
