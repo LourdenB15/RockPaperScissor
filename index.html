@@ -5,18 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissor">Scissor</button>
-    <button id="reset">Reset</button>
-    <div id="container">
-        Player Score: <span id="player">0</span>
-        Computer Score: <span id="computer">0</span>
+
+    <div class="container">
+
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="scores-wrapper">
+            <div class="player">
+                <h5>Player</h5>
+                <div class="score" id="player">
+                    0
+                </div>
+            </div>
+            <div class="center-text">
+                <h2>First to 5 Wins!</h2>
+                <div id="result"></div>
+            </div>
+
+            <div class="opponent">
+                <h5>Computer</h5>
+                <div class="score" id="opponent">
+                    0
+                </div>
+            </div>
+        </div>
+        <h3>Choose your weapon!</h3>
+        <div class="weapon-wrapper">
+            <button class="weapon" id="rock">Rock</button>
+            <button class="weapon" id="paper">Paper</button>
+            <button class="weapon" id="scissor">Scissor</button>
+        </div>
+
+        <div class="reset">
+            <p>Play Again!</p>
+        </div>
+
     </div>
+
     <script src="app.js"></script>
 </body>
 
