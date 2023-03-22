@@ -8,6 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #36393B;
+
 }
 
 .container {
@@ -27,7 +28,11 @@ h1 {
     margin-bottom: 50px;
     word-spacing: 10px;
     font-size: 35px;
+    transition: all .4s ease;
+}
 
+h2 {
+    transition: all .4s ease;
 }
 
 /* ////////////////// */
@@ -41,23 +46,10 @@ h1 {
     gap: 1rem;
 }
 
-.scores-wrapper h2 {
-    letter-spacing: 1px;
-    font-weight: 500;
-    height: 150px
-}
-
-.center-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 350px;
-    height: 170px;
-}
 
 #result {
     font-size: 20px;
-
+    transition: all .4s ease;
 }
 
 .score {
@@ -81,6 +73,7 @@ h1 {
 /* --/// Buttons ///-- */
 h3 {
     margin: 40px 0 20px;
+    transition: all .4s ease;
 }
 
 .weapon-wrapper {
@@ -92,12 +85,15 @@ h3 {
 
 .weapon {
     color: #36393B;
+    width: 100px;
+    height: 40px;
     border: 2px solid #36393B;
-    padding: 10px 20px;
-    margin: 0 20px;
+
+    margin: 0 20px 20px;
     cursor: pointer;
     font-weight: 700;
     transition: all .4s ease;
+
 }
 
 .weapon:hover {
@@ -129,7 +125,7 @@ h3 {
     width: 400px;
     border: 2px solid #36393B;
     padding: 15px 0;
-    margin: 50px 0;
+    margin: 30px 0;
     align-self: center;
     cursor: pointer;
     border-radius: 2em;
@@ -153,37 +149,42 @@ h3 {
 
 /* ////////////////// */
 /* --/// Responsive ///-- */
-@media (max-width:1080px) {
-    .scores-wrapper {
-        padding: 0 150px;
-    }
-}
 
 @media (max-width: 1000px) {
-    #result {
-        font-size: 18px;
-
-    }
-}
-
-@media (max-width: 933px) {
-    #result {
-        font-size: 16px;
-
-    }
-}
-
-@media (max-width: 860px) {
     .scores-wrapper {
         padding: 0 100px;
-
     }
 }
 
 @media (max-width: 730px) {
-    .center-text h2 {
-        font-size: 20px;
+    .scores-wrapper {
+        padding: 0;
+    }
+}
 
+
+@media (max-width: 470px) {
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .reset {
+        width: 300px;
+        margin: 0 0 50px;
     }
 }
 
